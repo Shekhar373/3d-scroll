@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+@font-face {
+  font-family: font;
+  src: url("/public/font/Rubik-VariableFont_wght.ttf");
+}
