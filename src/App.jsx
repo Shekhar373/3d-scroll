@@ -1,22 +1,28 @@
 import React from "react";
 import { Canvas } from "@react-three/fiber";
-import Model from "./r3f/Model";
 import { Environment } from "@react-three/drei";
-import Content from "./component/Content";
 import SmoothScroll from "./component/Lenis";
-import ModelParent from "./component/ModelParent";
+import { Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home";
+import ThreeScroll from "./component/ThreeScroll";
+import SphareImage from "./Pages/SphareImage";
 
 const App = () => {
   return (
-    <div className="relative bg-[#E5E5E5]"
-    >
+    <div className="relative bg-[#E5E5E5]">
       <SmoothScroll />
-      <ModelParent />
       
-      <div id="scroll" className="h-[500vh] w-full">
-        
-        <Content />
+
+      <div>
+        <Routes>
+          {/* <Route path='/' element={<Home />} /> */}
+          <Route path='/' element={<ThreeScroll />} />
+          <Route path='/sphare' element={<SphareImage />} />
+        </Routes>
+   
       </div>
+
+     
     </div>
   );
 };
