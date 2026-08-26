@@ -72,8 +72,9 @@ export default function ImageSphere() {
     group.current.rotation.y += delta * 0.1;
 
     // Make each child (image card) always face the camera
+    const cameraPosition = state.camera.position;
     group.current.children.forEach((child) => {
-      child.lookAt(state.camera.position);
+      child.lookAt(cameraPosition);
     });
   });
 
