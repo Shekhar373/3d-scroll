@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom";
 import ThreeScroll from "./component/ThreeScroll";
 import SphareImage from "./Pages/SphareImage";
 import Watch from "./Pages/Watch";
+import Home from "./Pages/Home";
 
 const App = () => {
   return (
